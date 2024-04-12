@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Bowl Roster</title>
+    <style>
+        /* Basic styling for player cards */
+        .player-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        /* Styling for player details container */
+        #player-details-container {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Puppy Bowl Roster</h1>
+
+    <!-- Container to display the roster of players -->
+    <div id="roster-container"></div>
+
+    <!-- Container to display details of a selected player -->
+    <div id="player-details-container">
+        <h2>Player Details</h2>
+    </div>
+
+    <!-- Form to add a new player -->
+    <h2>Add New Player</h2>
+    <form id="add-player-form">
+        <label for="playerName">Name:</label>
+        <input type="text" id="playerName" name="playerName" required>
+        <br>
+        <label for="playerBreed">Breed:</label>
+        <input type="text" id="playerBreed" name="playerBreed" required>
+        <br>
+        <button type="submit">Add Player</button>
+    </form>
+
+    <!-- Include the JavaScript file at the end to ensure DOM content is loaded -->
+    <script src="script.js"></script>
+</body>
+</html>
